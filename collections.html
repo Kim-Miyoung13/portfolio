@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АртПин – Подборки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__row">
+        <a class="brand" href="index.html">
+            <img src="images/logo.png" alt="Логотип" style="width: 32px; height: 32px; object-fit: contain;">
+            <div class="brand__text">
+                <span class="brand__name">АртПин</span>
+            </div>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="collections.html">Подборки</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+        <button class="theme-btn" id="themeBtn">🌙 Тема</button>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <h1>Подборки работ</h1>
+        <p class="section-description">Коллекции по темам – вдохновляйтесь и выбирайте.</p>
+
+        <section class="collection">
+            <h2>✨ Минимализм</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="images/minimal1.jpg" alt="Минимализм 1">
+                    <p>Чистые линии</p>
+                </div>
+                <div class="card">
+                    <img src="images/minimal2.jpg" alt="Минимализм 2">
+                    <p>Пространство</p>
+                </div>
+                <div class="card">
+                    <img src="images/minimal3.jpg" alt="Минимализм 3">
+                    <p>Тишина</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection">
+            <h2>🌐 Веб-дизайн</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="images/web1.jpg" alt="Сайт портфолио">
+                    <p>Лендинг</p>
+                </div>
+                <div class="card">
+                    <img src="images/web2.jpg" alt="Интернет-магазин">
+                    <p>E-commerce</p>
+                </div>
+                <div class="card">
+                    <img src="images/web3.jpg" alt="Корпоративный сайт">
+                    <p>Корпоративный</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection">
+            <h2>🎨 UI/UX проекты</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="images/ui1.jpg" alt="Мобильное приложение">
+                    <p>Мобильное приложение</p>
+                </div>
+                <div class="card">
+                    <img src="images/ui2.jpg" alt="Дашборд">
+                    <p>Дашборд</p>
+                </div>
+                <div class="card">
+                    <img src="images/ui3.jpg" alt="Дизайн-система">
+                    <p>Дизайн-система</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div>© АртПин</div>
+</footer>
+
+<div class="modal" id="workModal">
+    <div class="modal-content">
+        <span class="modal-close" id="modalClose">×</span>
+        <img id="modalImg">
+        <p id="modalTitle"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
